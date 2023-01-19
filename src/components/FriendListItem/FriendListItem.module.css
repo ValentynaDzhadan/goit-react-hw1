@@ -1,0 +1,36 @@
+.item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.status {
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+}
+.online {
+  background-color: rgb(153, 224, 144);
+}
+
+.offline {
+  background-color: rgb(224, 144, 144);
+}
+
+.avatar {
+  width: 100px;
+  border-radius: 50%;
+  background-color: #ebe5ca;
+}
+
+.name {
+  font-size: 16px;
+  font-weight: 600;
+  margin-top: 10px;
+  color: rgb(70, 69, 69);
+}
