@@ -5,11 +5,10 @@ function getRandomHexColor() {
   return `#${Math.floor(Math.random() * 16777215).toString(16)}`;
 }
 
-export const Statistics = ({ title = '', stats }) => {
+export const Statistics = ({ title, stats }) => {
   return (
     <section className={css.statistics}>
-      <h2 className={css.title}>{title}</h2>
-
+      {title.length > 0 && <h2 className="title">{title}</h2>}
       <ul className={css.statList}>
         {stats.map(({ id, label, percentage }) => (
           <li
